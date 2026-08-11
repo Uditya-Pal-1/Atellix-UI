@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# Environment Variables
+.env
+backend/.env
+
+# Output CSS
+frontend/public/css/style.css
+
+# System Logs
+*.log
