@@ -7,10 +7,14 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build:css": "tailwindcss build -i ./public/assets/css/input.css -o ./public/assets/css/style.css --watch",
+    "dev:all": "concurrently \"npm run dev\" \"npm run build:css\""
   },
   "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
     "autoprefixer": "^10.5.4",
+    "concurrently": "^10.0.4",
     "postcss": "^8.5.26",
     "tailwindcss": "^4.3.3"
   },
